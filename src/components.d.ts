@@ -15,8 +15,13 @@ export namespace Components {
   interface SBackdrop {}
   interface SBackdropAttributes extends StencilHTMLAttributes {}
 
-  interface SModal {}
-  interface SModalAttributes extends StencilHTMLAttributes {}
+  interface SModal {
+    'mtitle': string;
+    'open': () => void;
+  }
+  interface SModalAttributes extends StencilHTMLAttributes {
+    'mtitle'?: string;
+  }
 }
 
 declare global {

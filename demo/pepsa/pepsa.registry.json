@@ -1,0 +1,19 @@
+{
+  "namespace": "pepsa",
+  "fsNamespace": "pepsa",
+  "loader": "../pepsa.js",
+  "core": "pepsa.core.js",
+  "corePolyfilled": "pepsa.core.pf.js",
+  "components": {
+    "s-backdrop": {
+      "bundleIds": {
+        "$": "s-backdrop"
+      }
+    },
+    "s-modal": {
+      "bundleIds": {
+        "$": "s-modal"
+      }
+    }
+  }
+}

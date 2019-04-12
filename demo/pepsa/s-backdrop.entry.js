@@ -1,0 +1,1 @@
+class e{render(){return null}static get is(){return"s-backdrop"}static get style(){return"s-backdrop{width:100%;height:100%;background-color:rgba(0,0,0,.4);position:fixed;left:0;top:0;z-index:100}"}}export{e as SBackdrop};

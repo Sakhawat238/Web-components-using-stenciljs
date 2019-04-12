@@ -1,11 +1,45 @@
-s-modal {
-    font: 1em sans-serif;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #ccc;
-    background-color: white;
-    position: fixed;
-    top: 30%;
-    width: 350px;
-    left: calc(50% - 175px);
-    z-index: 1000;
-}
+s-modal{
+    display: none;
+    .dv001{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+        z-index: 100;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .dv002 {
+        font: 1em sans-serif;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #ccc;
+        background-color: white;
+        position: fixed;
+        top: 30%;
+        width: 350px;
+        left: calc(50% - 175px);
+        z-index: 200;
+        padding: 15px;
+
+        .dv003 {
+            display: flex;
+            align-items: center;
+            padding: 5px 0px 15px 0px;
+            .p001 {
+                color: #000;
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .p002 {
+                color: rgba(255,0,0,0.7);
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                cursor: pointer;
+            }
+        }
+    }
+}   

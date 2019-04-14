@@ -2,7 +2,7 @@ import {Component, Method, Element, Prop} from '@stencil/core';
 
 @Component({
     tag: 's-modal',
-    styleUrl: 's-modal.scss'
+    styleUrl: 's-modal.scss',
 })
 
 export class SModal {
@@ -27,7 +27,7 @@ export class SModal {
                 <div class="dv002">
                     <div class="dv003">
                         <p class="p001">{this.mtitle}</p>
-                        <p class="p002" onClick={this.closeModalHandler}>close</p>
+                        <p class="p002" onClick={this.closeModalHandler}>X</p>
                     </div>
                     <slot></slot>
                 </div>

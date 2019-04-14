@@ -22,17 +22,28 @@ export namespace Components {
   interface SModalAttributes extends StencilHTMLAttributes {
     'mtitle'?: string;
   }
+
+  interface SSideDrawer {
+    'open': boolean;
+    'title': string;
+  }
+  interface SSideDrawerAttributes extends StencilHTMLAttributes {
+    'open'?: boolean;
+    'title'?: string;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'SBackdrop': Components.SBackdrop;
     'SModal': Components.SModal;
+    'SSideDrawer': Components.SSideDrawer;
   }
 
   interface StencilIntrinsicElements {
     's-backdrop': Components.SBackdropAttributes;
     's-modal': Components.SModalAttributes;
+    's-side-drawer': Components.SSideDrawerAttributes;
   }
 
 
@@ -48,14 +59,22 @@ declare global {
     new (): HTMLSModalElement;
   };
 
+  interface HTMLSSideDrawerElement extends Components.SSideDrawer, HTMLStencilElement {}
+  var HTMLSSideDrawerElement: {
+    prototype: HTMLSSideDrawerElement;
+    new (): HTMLSSideDrawerElement;
+  };
+
   interface HTMLElementTagNameMap {
     's-backdrop': HTMLSBackdropElement
     's-modal': HTMLSModalElement
+    's-side-drawer': HTMLSSideDrawerElement
   }
 
   interface ElementTagNameMap {
     's-backdrop': HTMLSBackdropElement;
     's-modal': HTMLSModalElement;
+    's-side-drawer': HTMLSSideDrawerElement;
   }
 
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/pepsa.js"></script>
+
+</head>
+<body>
+
+  <button id="sdbtn" style="position: absolute; right: 100px;">toogle side drawer</button>
+
+  <s-side-drawer title="Sidebar title goes here">
+    <nav>
+      <ul>
+        <li>Monkey D Luffy</li>
+        <li>Portgas D Ace</li>
+        <li>Sabo</li>
+      </ul>
+    </nav>
+
+  </s-side-drawer>
+
+  <button id="modbtn">Open modal</button> 
+
+  <s-modal mtitle="This is modal title">
+    <p>Contents goes here</p>
+    <button>button</button>
+  </s-modal>
+  
+
+  <script>
+    window.onload=function(){
+      const btn1 = document.querySelector('#modbtn');
+      const modal = document.querySelector('s-modal');
+      btn1.addEventListener('click', function(){
+        modal.open();
+      });
+
+      const btn = document.querySelector('#sdbtn');
+      const sd = document.querySelector('s-side-drawer');
+      btn.addEventListener('click', ()=>{
+        !sd.open? sd.open= true: sd.open = false;
+      });
+    }
+  </script>
+</body>
+</html>

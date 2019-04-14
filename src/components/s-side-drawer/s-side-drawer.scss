@@ -1,0 +1,38 @@
+aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 30rem;
+    max-width: 80%;
+    height: 100vh;
+    background: #f3f3f3;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+    transition: left 0.3s ease-out;
+}
+
+:host([open]) aside {
+    left: 0;
+}
+
+.sdh101 {
+    padding: 1rem;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+
+.sdht45 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+.sdhbt22 {
+    color: wheat;
+    margin-left: auto;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}

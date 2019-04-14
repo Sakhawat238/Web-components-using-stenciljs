@@ -16,6 +16,7 @@ export const config: Config = {
   ],
   bundles: [
     { components: ['s-modal'] },
-    { components: ['s-backdrop'] }
+    { components: ['s-backdrop'] },
+    { components: ['s-side-drawer'] }
   ]
 };
